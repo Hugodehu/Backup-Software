@@ -1,0 +1,54 @@
+﻿<Window x:Class="PS_G1_L1.View.ProgressView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PS_G1_L1.View"
+        mc:Ignorable="d"
+        Title="ProgressView" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1" Background="#bfadad">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="ProgressBar" Grid.Row="1" Grid.Column="1">
+                    <ProgressBar x:Name="ProgressBarItem" Minimum="0" Maximum="100"/>
+                </Grid>
+            </Grid>
+            <TextBlock x:Name="TextBlockTitle" Grid.Row="0" Text="Chargement en cours" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBlock x:Name="TextBlockPourcent" Grid.Row="2" Text="TextBlockPourcent" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </Grid>
+    </Grid>
+</Window>

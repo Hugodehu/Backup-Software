@@ -1,0 +1,143 @@
+<Page x:Class="PS_G1_L1.View.ModifyJob"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:hl="http://schemas.hpod9.com/haley/mvvm"
+      xmlns:local="clr-namespace:PS_G1_L1.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="841" d:DesignWidth="1504"
+      Title="ModifyJob">
+
+    <Grid Background="#dfdfde">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1" Background="#cfcfcf">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="25" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="0" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="25" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="450"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="ButtonBack" Grid.Column="1" Content="{hl:Lang CreateJobBack}" FontSize="32" Click="ButtonBack_Click"/>
+            </Grid>
+
+            <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Text="{hl:Lang ModifyJobTitle}" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Grid Grid.Row="5" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="TitleBackUpName" Text="{hl:Lang CreateJobNameSave}" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <TextBox x:Name="TextBoxBackUpName" Grid.Row="1" Text="" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="TitleSourcePath" Text="{hl:Lang CreateJobSource}" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="75"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="TextBoxBackUpSourcePath" Grid.Row="1" Text="" FontSize="24" Height="50" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+                    <Button x:Name="ButtonSource" Grid.Column="2" Content="..." FontSize="32" Margin="0,5,0,4" Click="ButtonSource_Click"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="9" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="TitleDestinationPath" Text="{hl:Lang CreateJobFileDestination}" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="75"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="TextBoxBackUpDestinationPath" Grid.Row="1" Text="" FontSize="24" Height="50" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+                    <Button x:Name="ButtonDestination" Grid.Column="2" Content="..." FontSize="32" Height="50" Click="ButtonDestination_Click"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="5" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="TitleTypeFileFolder" Text="{hl:Lang CreateJobTypeSave}" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <ComboBox x:Name="ComboBoxTypeFileFolder" Grid.Row="1" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Stretch"  />
+            </Grid>
+
+            <Grid Grid.Row="7" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="TitleTypeWorkSave" Text="{hl:Lang CreateJobTypeFullDif}" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <ComboBox x:Name="ComboBoxTypeWorkSave" Grid.Row="1" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+            </Grid>
+
+            <Grid Grid.Row="9" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="TitleEncrypt" Text="{hl:Lang CreateJobEncrypt}" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                <ComboBox x:Name="ComboBoxEncrypt" Grid.Row="1" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+            </Grid>
+
+            <Grid Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="25" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="buttonValidate" Grid.Column="1" Grid.Row="1" Content="{hl:Lang ModifyJobTitle}" FontSize="32" Click="buttonValidate_Click"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

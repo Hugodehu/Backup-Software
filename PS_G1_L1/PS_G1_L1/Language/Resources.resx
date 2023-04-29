@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>EasySave</value>
+  </data>
+  <data name="ApplicationVersion" xml:space="preserve">
+    <value>Version : 2.0</value>
+  </data>
+  <data name="CopieEnd" xml:space="preserve">
+    <value>Copie terminée</value>
+  </data>
+  <data name="CreateJobBack" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="CreateJobEncrypt" xml:space="preserve">
+    <value>Voulez vous encrypter votre sauvegarde ?</value>
+  </data>
+  <data name="CreateJobFileDestination" xml:space="preserve">
+    <value>Chemin du fichier de destination</value>
+  </data>
+  <data name="CreateJobFileSource" xml:space="preserve">
+    <value>Chemin du fichier source</value>
+  </data>
+  <data name="CreateJobFolderDestination" xml:space="preserve">
+    <value>Chemin du dossier de destination</value>
+  </data>
+  <data name="CreateJobFolderSource" xml:space="preserve">
+    <value>Chemin du dossier source</value>
+  </data>
+  <data name="CreateJobNameSave" xml:space="preserve">
+    <value>Nom de la sauvegarde</value>
+  </data>
+  <data name="CreateJobSaveJob" xml:space="preserve">
+    <value>Enregister le travail</value>
+  </data>
+  <data name="CreateJobSource" xml:space="preserve">
+    <value>Chemin</value>
+  </data>
+  <data name="CreateJobTitle" xml:space="preserve">
+    <value>Création d'un travail de sauvegarde</value>
+  </data>
+  <data name="CreateJobTypeFullDif" xml:space="preserve">
+    <value>Type de travail de sauvegarde</value>
+  </data>
+  <data name="CreateJobTypeSave" xml:space="preserve">
+    <value>Type de sauvegarde</value>
+  </data>
+  <data name="DeleteJobConfirmTitle" xml:space="preserve">
+    <value>Voulez vous vraiment surpprimer ce travail de sauvegarde ?</value>
+  </data>
+  <data name="DeleteJobDeleteJob" xml:space="preserve">
+    <value>Supprimer le travail</value>
+  </data>
+  <data name="DeleteJobEncrypt" xml:space="preserve">
+    <value>Sauvegarde encrypter </value>
+  </data>
+  <data name="DeleteJobMessage" xml:space="preserve">
+    <value>Suppression du travail de sauvegarde</value>
+  </data>
+  <data name="DeleteJobTitle" xml:space="preserve">
+    <value>Suppression d'un travail de sauvegarde</value>
+  </data>
+  <data name="Differential" xml:space="preserve">
+    <value>Différentiel</value>
+  </data>
+  <data name="EncryptionExtension" xml:space="preserve">
+    <value>Extension d'encryptage</value>
+  </data>
+  <data name="ErrorDestinationEmpty" xml:space="preserve">
+    <value>Veuillez rentrer le chemin du fichier/dossier de destination.</value>
+  </data>
+  <data name="ErrorEncryptEmpty" xml:space="preserve">
+    <value>Veuillez renseigner votre choix concernant l'encryptage de votre sauvegarde.</value>
+  </data>
+  <data name="ErrorNameSaveEmpty" xml:space="preserve">
+    <value>Veuillez rentrer le nom de la sauvegarde.</value>
+  </data>
+  <data name="ErrorSelectFileDestination" xml:space="preserve">
+    <value>Veuillez selectionner un fichier de destination</value>
+  </data>
+  <data name="ErrorSelectFileSource" xml:space="preserve">
+    <value>Veuillez selectionner un fichier source</value>
+  </data>
+  <data name="ErrorSelectFolderDestination" xml:space="preserve">
+    <value>Veuillez selectionner un dossier de destination</value>
+  </data>
+  <data name="ErrorSelectFolderSource" xml:space="preserve">
+    <value>Veuillez selectionner un dossier source</value>
+  </data>
+  <data name="ErrorSourceEmpty" xml:space="preserve">
+    <value>Veuillez rentrer le chemin du fichier/dossier source.</value>
+  </data>
+  <data name="ErrorTypeEmpty" xml:space="preserve">
+    <value>Veuillez rentrer le type de sauvegarde.</value>
+  </data>
+  <data name="ErrorTypeOfWork" xml:space="preserve">
+    <value>Veuillez rentrer le type de travail de sauvegarde.</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Fichier</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Dossier</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Entier</value>
+  </data>
+  <data name="MainWindowJob" xml:space="preserve">
+    <value>Travaux</value>
+  </data>
+  <data name="MainWindowJobAdd" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="MainWindowJobDelete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="MainWindowJobModify" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="MainWindowJobRead" xml:space="preserve">
+    <value>Lire</value>
+  </data>
+  <data name="MainWindowJobSelected" xml:space="preserve">
+    <value>Travail séléctionné :</value>
+  </data>
+  <data name="MainWindowParameters" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="MainWindowSave" xml:space="preserve">
+    <value>Sauvegarde</value>
+  </data>
+  <data name="MaximumFileSize" xml:space="preserve">
+    <value>Taille maximum du fichier</value>
+  </data>
+  <data name="ModifyJobTitle" xml:space="preserve">
+    <value>Modification d'un travail de sauvegarde</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>NON</value>
+  </data>
+  <data name="NumberSaveTitle" xml:space="preserve">
+    <value>Nombre de sauvegarde :</value>
+  </data>
+  <data name="OtherMaximumFileSize" xml:space="preserve">
+    <value>Autre taille maximum</value>
+  </data>
+  <data name="ParamsLanguage" xml:space="preserve">
+    <value>Langue :</value>
+  </data>
+  <data name="ParamsPathDefault" xml:space="preserve">
+    <value>Chemin de sauvegarde par défaut :</value>
+  </data>
+  <data name="ParamsTitle" xml:space="preserve">
+    <value>Paramètres généraux de l'application</value>
+  </data>
+  <data name="ParamsTypeLogs" xml:space="preserve">
+    <value>Type de logs :</value>
+  </data>
+  <data name="ParamsValidate" xml:space="preserve">
+    <value>Valider les paramètres</value>
+  </data>
+  <data name="PriorityExtension" xml:space="preserve">
+    <value>Extension logiciel prioritaire</value>
+  </data>
+  <data name="ReadJobConfirm" xml:space="preserve">
+    <value>Lancer le travail de sauvegarde</value>
+  </data>
+  <data name="ReadJobTitle" xml:space="preserve">
+    <value>Informations sur le travail de sauvegarde</value>
+  </data>
+  <data name="SaveConfirm" xml:space="preserve">
+    <value>Lancer la sauvegarde</value>
+  </data>
+  <data name="SaveParamsEncrypt" xml:space="preserve">
+    <value>Cryptage :</value>
+  </data>
+  <data name="SaveParamsLogs" xml:space="preserve">
+    <value>Logs : </value>
+  </data>
+  <data name="SaveParamsSave" xml:space="preserve">
+    <value>Paramètres de sauvegarde :</value>
+  </data>
+  <data name="Validate" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="WorkCompleted" xml:space="preserve">
+    <value>Travail terminé</value>
+  </data>
+  <data name="WorkDestination" xml:space="preserve">
+    <value>Chemin de destination</value>
+  </data>
+  <data name="WorkEncrypt" xml:space="preserve">
+    <value>Encryptage</value>
+  </data>
+  <data name="WorkFileFolder" xml:space="preserve">
+    <value>Fichier/Dossier</value>
+  </data>
+  <data name="WorkNameJob" xml:space="preserve">
+    <value>Nom du travail</value>
+  </data>
+  <data name="WorkSource" xml:space="preserve">
+    <value>Chemin source</value>
+  </data>
+  <data name="WorkTitle" xml:space="preserve">
+    <value>Liste des travaux de sauvegarde</value>
+  </data>
+  <data name="WorkType" xml:space="preserve">
+    <value>Type de travail</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>OUI</value>
+  </data>
+</root>

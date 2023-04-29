@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <UseWindowsForms>True</UseWindowsForms>
+    <UseWPF>True</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="test\**" />
+    <EmbeddedResource Remove="test\**" />
+    <None Remove="test\**" />
+    <Page Remove="test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Haley.MVVM" Version="6.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoSoft\CryptoSoft.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Language\Resources.en.Designer.cs">
+      <DependentUpon>Resources.en.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Language\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Language\Resources.en.resx">
+      <LastGenOutput>Resources.en.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Language\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

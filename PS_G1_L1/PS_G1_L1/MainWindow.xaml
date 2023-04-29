@@ -1,0 +1,88 @@
+﻿<Window x:Class="PS_G1_L1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hl="http://schemas.hpod9.com/haley/mvvm"
+        xmlns:local="clr-namespace:PS_G1_L1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid>
+        <Grid Margin="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0" Background=" #bfadad ">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="15"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{hl:Lang ApplicationName}" x:Name="TitleMainWindow" FontSize="48" Margin="0,26,0,0" VerticalAlignment="Top"  HorizontalAlignment="Center" Width="188"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0" Background=" #cfbdbd ">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="15"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="15"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="ButtonSave" Grid.Row="1" Grid.Column="1" Content="{hl:Lang MainWindowSave}" FontSize="24" Click="ButtonSave_Click"/>
+                <Button x:Name="ButtonWork" Grid.Row="3" Grid.Column="1" Content="{hl:Lang MainWindowJob}" FontSize="24" Click="ButtonWork_Click" Height="100" VerticalAlignment="Top"/>
+                <Button x:Name="ButtonParams" Grid.Row="5" Grid.Column="1" Content="{hl:Lang MainWindowParameters}" FontSize="24" Click="ButtonParams_Click"/>
+                <Button x:Name="ButtonRemote" Grid.Row="7" Grid.Column="1" Content="Remote EasySave" FontSize="24" Click="ButtonRemote_Click"/>
+            </Grid>
+            <Grid Grid.RowSpan="1" Grid.Column="1" Background=" #ead4d4 ">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="15"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="15"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="TitleWorkSelected" Grid.Column="1" Grid.Row="1" Text="{hl:Lang MainWindowJobSelected}" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="TextBlockWorkName" Grid.Column="3" Grid.ColumnSpan="5" Grid.Row="1" Text="123456789012345678901234567890123456789" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+                <Button x:Name="ButtonAdd" Grid.Column="1" Grid.Row="3" Content="{hl:Lang MainWindowJobAdd}" FontSize="24" Background="  #4fba00 " Foreground="White" Click="ButtonAdd_Click"/>
+                <Button x:Name="ButtonRead" Grid.Column="3" Grid.Row="3" Content="{hl:Lang MainWindowJobRead}" FontSize="24" Background=" #009bba " Foreground="White" Click="ButtonRead_Click"/>
+                <Button x:Name="ButtonModify" Grid.Column="5" Grid.Row="3" Content="{hl:Lang MainWindowJobModify}" FontSize="24" Background="  #baa100 " Foreground="White" Click="ButtonModify_Click"/>
+                <Button x:Name="ButtonDelete" Grid.Column="7" Grid.Row="3" Content="{hl:Lang MainWindowJobDelete}" FontSize="24" Background="  #ba0000  " Foreground="White" Click="ButtonDelete_Click"/>
+            </Grid>
+            <Frame x:Name="PanelView" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.Column="1">
+                
+            </Frame>
+        </Grid>
+    </Grid>
+</Window>
